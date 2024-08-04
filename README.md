@@ -1,2 +1,42 @@
-# EmotionFlip-Reasoning-EFR-Project
-Discover our EmotionFlip Reasoning (EFR) project, aiming to identify utterances that cause emotional shifts in conversations. We implement two unique models to detect these emotion flips. Explore model architectures, training processes, evaluation metrics, and insightful analysis in our repository
+# 📝 EmotionFlip Reasoning (EFR) Project
+
+## What is EFR?
+In pursuit of this objective, the paper introduces a new challenge named EmotionFlip Reasoning (EFR) in conversational analysis. This task aims to identify all utterances within a dialogue that cause a speaker's emotional state to change. It's important to note that while some emotional shifts may be prompted by other speakers, there are instances where an individual's own utterance can serve as the catalyst for this change.
+
+Formally, the EFR task can be defined as follows:
+
+Let \( U = [u_1, u_2, \ldots, u_n] \) be a sequence of \( n \) utterances in a dialogue conversation \( D \) uttered by \( m \) distinct speakers \( S = [s_1, s_2, \ldots, s_m] \). As the conversation progresses, these speakers utter their views or feelings in response to previous utterances. For each utterance \( u_i^{(s_j)} \) in the dialogue, we have an associated emotion \( E \in \{anger, fear, disgust, sad, happy, surprise, neutral\} \), i.e., \( E_i^{s_j} = f_E(u_i^{s_j}) \). Consequently, if the emotion expressed in utterance \( u_i^{a_j} \) flips with respect to the speaker \( s_j \)'s last utterance \( u_l^{s_j} \), there might be a set of associated trigger-utterances \( u_k \) (\( 1 \leq k \leq i \)) responsible for the emotion-flip of \( s_j \), i.e., \( \ldots, u_k, \ldots = f_T(u_i^{s_j}) \). In the case of no emotion-flip, we associate a 'non-trigger' label to the current utterance.
+![image](https://github.com/user-attachments/assets/06ba9826-a198-4a32-8a17-a521b1921c40)
+
+## 📚 Project Goals
+1. Train two models (M3 & M4) with independent architectures different from the one mentioned in the referenced paper. If re-implementing the paper’s model architecture, use the paper’s results as baselines and ensure your scores are comparable.
+2. Submit both model checkpoints (M3 and M4) and report the better model with proper reasoning. These models will be tested on the provided testing data during demos.
+
+## 🛠️ Model Setups
+
+### Model M3: Custom Architecture 🧠
+- **Description:** A unique model architecture designed for identifying emotion flips within conversations. Details and code are provided in the repository.
+![image](https://github.com/user-attachments/assets/9f5b6357-bf3d-4dc1-b2b7-50a0cc41994f)
+
+### Model M4: Custom Architecture 🧠
+- **Description:** Another distinct model architecture focusing on the same goals as M3 but with a different approach. Details and code are provided in the repository.
+![image](https://github.com/user-attachments/assets/f337d01a-27ba-44fd-b0ca-78865b801b82)
+
+
+## 📊 Evaluation Metrics
+- **Emotion Flip Detection Accuracy**
+- **Training and Validation Loss vs. Epochs**
+
+## 📈 Deliverables
+1. Model checkpoints for M3 and M4 in proper format.
+2. Well-labeled model architectures for both M3 and M4. (If implementing the paper’s model, ignore this deliverable for one model but note the baselines.)
+3. Clearly state which of the two architectures performed better and why.
+4. A detailed report explaining the intuition behind the models, data splits, and all relevant details.
+5. Training loss and validation loss vs. epochs plots for each model.
+
+
+## 🚀 How to Run
+1. **Clone the Repository:**
+   ```sh
+   git clone <repository-url>
+   cd <repository-folder>
