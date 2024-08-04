@@ -10,6 +10,7 @@ Let U be a sequence of n utterances [u1, u2, ..., un] in a dialogue conversation
 Consequently, if the emotion expressed in utterance ui flips with respect to the speaker's last utterance ul, there might be a set of associated trigger-utterances uk (where 1 <= k <= i) responsible for the emotion-flip, i.e., [..., uk, ...] = fT(ui). In the case of no emotion-flip, a 'non-trigger' label is associated with the current utterance.
 
 
+
 ![image](https://github.com/user-attachments/assets/06ba9826-a198-4a32-8a17-a521b1921c40)
 
 ## 📚 Project Goals
@@ -20,10 +21,14 @@ Consequently, if the emotion expressed in utterance ui flips with respect to the
 
 ### Model M3: Custom Architecture 🧠
 - **Description:** A unique model architecture designed for identifying emotion flips within conversations. Details and code are provided in the repository.
+
+- 
 ![image](https://github.com/user-attachments/assets/9f5b6357-bf3d-4dc1-b2b7-50a0cc41994f)
 
 ### Model M4: Custom Architecture 🧠
 - **Description:** Another distinct model architecture focusing on the same goals as M3 but with a different approach. Details and code are provided in the repository.
+
+- 
 ![image](https://github.com/user-attachments/assets/f337d01a-27ba-44fd-b0ca-78865b801b82)
 
 
