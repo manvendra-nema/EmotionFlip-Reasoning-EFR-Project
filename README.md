@@ -5,7 +5,10 @@ In pursuit of this objective, the paper introduces a new challenge named Emotion
 
 Formally, the EFR task can be defined as follows:
 
-Let \( U = [u_1, u_2, \ldots, u_n] \) be a sequence of \( n \) utterances in a dialogue conversation \( D \) uttered by \( m \) distinct speakers \( S = [s_1, s_2, \ldots, s_m] \). As the conversation progresses, these speakers utter their views or feelings in response to previous utterances. For each utterance \( u_i^{(s_j)} \) in the dialogue, we have an associated emotion \( E \in \{anger, fear, disgust, sad, happy, surprise, neutral\} \), i.e., \( E_i^{s_j} = f_E(u_i^{s_j}) \). Consequently, if the emotion expressed in utterance \( u_i^{a_j} \) flips with respect to the speaker \( s_j \)'s last utterance \( u_l^{s_j} \), there might be a set of associated trigger-utterances \( u_k \) (\( 1 \leq k \leq i \)) responsible for the emotion-flip of \( s_j \), i.e., \( \ldots, u_k, \ldots = f_T(u_i^{s_j}) \). In the case of no emotion-flip, we associate a 'non-trigger' label to the current utterance.
+Let \( U = [u_1, u_2, \ldots, u_n] \) be a sequence of \( n \) utterances in a dialogue conversation \( D \) uttered by \( m \) distinct speakers \( S = [s_1, s_2, \ldots, s_m] \). As the conversation progresses, these speakers express their views or feelings in response to previous utterances. For each utterance \( u_i^{(s_j)} \) in the dialogue, there is an associated emotion \( E \in \{anger, fear, disgust, sad, happy, surprise, neutral\} \), i.e., \( E_i^{s_j} = f_E(u_i^{s_j}) \).
+
+Consequently, if the emotion expressed in utterance \( u_i^{a_j} \) flips with respect to the speaker \( s_j \)'s last utterance \( u_l^{s_j} \), there might be a set of associated trigger-utterances \( u_k \) (\( 1 \leq k \leq i \)) responsible for the emotion-flip of \( s_j \), i.e., \(\ldots, u_k, \ldots = f_T(u_i^{s_j})\). In the case of no emotion-flip, a 'non-trigger' label is associated with the current utterance.
+
 ![image](https://github.com/user-attachments/assets/06ba9826-a198-4a32-8a17-a521b1921c40)
 
 ## 📚 Project Goals
