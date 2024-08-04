@@ -8,6 +8,8 @@ Formally, the EFR task can be defined as follows:
 Let U be a sequence of n utterances [u1, u2, ..., un] in a dialogue conversation D uttered by m distinct speakers [s1, s2, ..., sm]. As the conversation progresses, these speakers express their views or feelings in response to previous utterances. For each utterance ui in the dialogue, there is an associated emotion from the set {anger, fear, disgust, sad, happy, surprise, neutral}, i.e., Ei = fE(ui).
 
 Consequently, if the emotion expressed in utterance ui flips with respect to the speaker's last utterance ul, there might be a set of associated trigger-utterances uk (where 1 <= k <= i) responsible for the emotion-flip, i.e., [..., uk, ...] = fT(ui). In the case of no emotion-flip, a 'non-trigger' label is associated with the current utterance.
+
+
 ![image](https://github.com/user-attachments/assets/06ba9826-a198-4a32-8a17-a521b1921c40)
 
 ## 📚 Project Goals
